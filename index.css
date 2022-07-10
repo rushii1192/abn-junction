@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --button-padding: 8px;
+    --button-radius: 30px;
+    --card-radius: 25px;
+    --card-padding: 8px;
+}
+
+ul{
+    list-style: none;
+}
+
+hr{
+    border-color: #a9aca9;
+}
+
+ul li{
+    padding: 8px;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+button{
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.top-bar{
+    background-color: #7f2dd3;
+    color: white;
+    padding: 6px;
+}
+.top-bar span{
+    padding: 9px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.row{
+    display: flex;
+}
+
+.top-bar-button{
+    background-color: #e61e1e;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    border-color: #e61e1e;
+}
+
+.middle-bar{
+    padding: 0.4%;
+}
+
+.middle-bar img{
+    height: 69px;
+}
+
+.middle-button-wrapper{
+    display: flex;
+    margin-left: 10%;
+    padding: 17px;
+}
+
+.middle-bar-button{
+    margin-right: 10%;
+    background-color: #446084;
+    font-weight: 600;
+    color: white;
+    width: 82px;
+}
+
+.search-wrapper{
+    width: 100%;
+    padding-left: 7%;
+    padding-top: 1.5%;
+}
+
+.search-wrapper input{
+    width: 100%;
+    height: 30px;
+    border-radius: var(--button-radius);
+    border-color: #ddd;
+    background-color: #f4f4f4;
+}
+
+.main-nav{
+    background-color: black;
+    color: white;
+    font-size: 21px;
+    padding: 7px;
+}
+
+.col-10{
+    width: 100%;
+}
+
+.coupon-wrapper{
+    width: 80%;
+    margin: 1% 10% 1%;
+    background-color: #1b0aab;
+}
+
+.coupon-wrapper img{
+    padding: 1% 0% 1% 15%;
+}
+
+.coupon-info{
+    text-align: center;
+    padding: 2% 10%;
+}
+
+.coupon-info h1{
+    color: #fbff00;
+    padding-bottom: 3%;
+}
+
+.coupon-info h2{
+    color: white;
+    padding-bottom: 3%;
+}
+
+.coupon-info h3{
+    color: #ffa000;
+}
+
+.center-container{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.card{
+    border: 1px solid;
+    border-radius: var(--card-radius);
+    width: 30%;
+    margin: 1%;
+    padding: 10px;
+}
+
+.plan-title{
+    color: white;
+    background-color: #FF3A68;
+    text-align: center;
+    padding: 4%;
+    font-size: 24px;
+}
+
+.plan-details ul{
+    list-style: none;
+    text-align: center;
+}
+
+.plan-details ul li{
+    padding: 6px;
+    font-size: 20px;
+}
+
+li h3{
+    color: #0be21d;
+}
+
+footer{
+    background-color: #777777;
+    color: white;
+}
+
+.upper-footer div{
+    width: 30%;
+    font-size: 20px;
+    margin: 1%;
+}
+.ratings{
+    color: #ecb10e;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 342px;
+    height: 231px;
+    perspective: 1000px;
+    padding: 13px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: rgb(0 208 173);
+  }
+  .flip-card-front h2{
+      color: #777777;
+  }
+  .flip-card-front p {
+      color: white;
+      font-size: 19px;
+  }
+  .flip-card-back {
+    background-color: #6263bd;
+    color: white;
+    transform: rotateX(180deg);
+  }
+
+  .gpl-need h4{
+      font-size: 67px;
+      padding-left: 25%;
+      color: #a39898;
+  }
+
+.card-container{
+    width: 20%;
+    margin: 2%;
+    box-shadow: 17px 13px #eaeaea;
+    border-radius: 6px;
+}
+.card-container img{
+    width: 100%;
+}
+.prod-details{
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+strike{
+    color: #777777;
+}
+.gpl-info-text{
+    border: 2px solid;
+    border-radius: var(--card-radius);
+    padding: 28px;
+    font-size: 24px;
+    background-color: #f4ecec;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel__item {
+    height: 62px;
+    padding: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    display: none;
+  }
+  
+  .carousel__item--selected {
+    display: flex;
+  }
+  
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(139, 139, 139);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel__button--selected {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .brand-container{
+      padding: 0% 2%;
+  }
+  
+@media screen and (max-width: 480px) {
+    .row{
+        display: block;
+    }
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+    .carousel__item--selected {
+        display: none;
+    }
+    .search-wrapper {
+        width: 81%;
+    }
+    .coupon-wrapper img {
+        padding: 1% 0% 0% 15%;
+    }
+    .flip-card {
+        width: 327px;
+        padding: 10px 0px;
+    }
+    .coupon-wrapper img {
+        padding: 1% 0% 0% 0%;
+    }
+    .card{
+        width: 91%;
+    }
+    .card-container {
+        width: 87%;
+    }
+    .middle-bar {
+        text-align: center;
+    }
+    .middle-button-wrapper {
+        padding: 15px 46px;
+    }
+  }
+  
